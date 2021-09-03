@@ -1,6 +1,13 @@
-import { NgModule } from '@angular/core';
+/*
+ * app.module.ts
+ */
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
+// our feature module
+import { TeslaBatteryModule } from './tesla-battery/tesla-battery.module';
+
+// our app component
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,9 +15,12 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // include our TeslaBatteryModule
+    TeslaBatteryModule
   ],
   providers: [],
+  // bootstrap the AppComponent
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

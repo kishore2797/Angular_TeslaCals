@@ -2,9 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+   <header class="header">
+      <img [src]="logo" alt="">
+    </header>
+    <div class="wrapper">
+      <tesla-battery></tesla-battery>
+    </div>
+  `,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  logo: string = 'assets/logo.svg';
   title = 'TeslaCals';
 }

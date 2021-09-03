@@ -35,7 +35,7 @@ const RADIO_CONTROL_ACCESSOR = {
     </div>
   `,
   providers: [RADIO_CONTROL_ACCESSOR],
-  styleUrls: ['./tesla-wheels.component.scss']
+  styleUrls: ['./tesla-wheel.component.scss']
 })
 export class TeslaWheelComponent implements ControlValueAccessor {
   constructor() {

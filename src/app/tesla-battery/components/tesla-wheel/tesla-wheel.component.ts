@@ -21,7 +21,7 @@ const RADIO_CONTROL_ACCESSOR = {
           [class.tesla-wheels__item--focused]="focused === size.toString()">
           <input
             type="radio"
-            name="wheelsize"
+            name="wheelSize"
             [attr.value]="size"
             (blur)="onBlur(size.toString())"
             (change)="onChange(size.toString())"
